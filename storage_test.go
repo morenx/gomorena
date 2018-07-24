@@ -17,7 +17,7 @@ type storageIntegrationSuite struct{}
 var _ = Suite(&storageIntegrationSuite{})
 
 func (s *storageIntegrationSuite) Test_storingAndRetreivingAProduct(c *C) {
-	db, err := sql.Open("mysql", "root:foobar@/mysql")
+	db, err := sql.Open("mysql", "root:foomeow@/mysql")
 	if err != nil {
 		fmt.Println(err)
 	}

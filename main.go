@@ -30,7 +30,7 @@ type product struct {
 }
 
 func initStorage() {
-	migration, _ := migrate.New("file://migrations", "mysql://root:foobar@tcp/mysql")
+	migration, _ := migrate.New("file://migrations", "mysql://root:foomeow@tcp/mysql")
 	migration.Up()
 }
 

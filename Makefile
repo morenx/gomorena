@@ -14,6 +14,7 @@ test: lint
 	go test -cover -v ./...
 
 run: build
+	@echo 'Server running on localhost:8080'
 	./gomorena
 
 db:
@@ -29,3 +30,7 @@ dbrm:
 
 dblogin:
 	mysql mysql -h 127.0.0.1 -P 3306 -u root -p
+
+dbloginMac:
+	@echo 'Use command: mysql mysql -h 127.0.0.1 -P 3306 -u root -p'
+	docker exec -it morenadb bash
